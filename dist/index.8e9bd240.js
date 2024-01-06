@@ -675,14 +675,14 @@ function pushUndo() {
     undoElement.classList.add("selected");
 }
 function popUndo() {
+    if (undoStack.length <= 1) return;
     undoStack.pop();
-    const old = undoStack[undoStack.length - 1];
-    if (old) {
-        map = JSON.parse(old);
-        (0, _render.cleanMap)();
-        (0, _render.renderMap)(map, pixelRatio);
-        (0, _render.setBorder)(map, pixelRatio);
-    }
+    const previousState = undoStack[undoStack.length - 1];
+    map = JSON.parse(previousState);
+    (0, _render.cleanMap)();
+    (0, _render.renderMap)(map, pixelRatio);
+    (0, _render.setBorder)(map, pixelRatio);
+    undoElement.classList.toggle("selected", undoStack.length > 1);
 }
 undoElement.addEventListener("click", (event)=>{
     popUndo();
