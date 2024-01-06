@@ -2,12 +2,15 @@
   "name": "bordy",
   "version": "1.0.0",
   "description": "Bordy: A creative and user-friendly tool for designing one-bit, 9x9 grid-based border patterns using CSS's border-image property. Perfect for adding a unique, retro pixel-art style to web elements.",
-  "main": "index.js",
   "browserslist": [
     ">0.2%",
     "not dead",
     "not op_mini all"
   ],
+  "main": "index.js",
+  "targets": {
+    "main": false
+  },
   "dependencies": {
     "copy-to-clipboard": "^3.3.1"
   },
@@ -17,7 +20,7 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html -d docs --public-url /bordy/",
+    "build": "parcel build index.html --dist-dir docs --public-url /bordy/",
     "lint": "eslint .",
     "test": "jest"
   },
