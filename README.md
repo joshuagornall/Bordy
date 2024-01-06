@@ -52,8 +52,6 @@ Bordy is unleashed upon the world under the [MIT License](LICENSE).
 
 Big thanks to the border fanatics and pixel perfectionists. You inspire us to push the boundaries (pun intended). 🎩
 
----
-
 Happy designing, folks! Brought to you by the whimsical world of Joshua Gornall.
 
 ![img0](assets/screenshot.png)
