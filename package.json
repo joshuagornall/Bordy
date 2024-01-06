@@ -1,0 +1,27 @@
+{
+  "name": "bordy",
+  "version": "1.0.0",
+  "description": "2bit 9patch editor",
+  "main": "index.js",
+  "dependencies": {
+    "copy-to-clipboard": "^3.3.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0",
+    "typescript": "^3.8.2"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html -d docs --public-url /bordy/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuagornall/bordy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshuagornall/bordy/issues"
+  },
+  "homepage": "https://github.com/joshuagornall/bordy#readme"
+}
